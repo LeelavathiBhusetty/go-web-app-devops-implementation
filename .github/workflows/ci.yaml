@@ -69,16 +69,16 @@ jobs:
         push: true
         tags: ${{ secrets.DOCKERHUB_USERNAME }}/go-web-app:${{github.run_id}}
 
-  update-newtag-in-helm-chart:
-    runs-on: ubuntu-latest
+  #update-newtag-in-helm-chart:
+   # runs-on: ubuntu-latest
 
-    needs: push
+   # needs: push
 
-    steps:
-    - name: Checkout repository
-      uses: actions/checkout@v4
-      with:
-        token: ${{ secrets.SECRETS_TOKEN}}
+   # steps:
+   # - name: Checkout repository
+    #  uses: actions/checkout@v4
+     # with:
+      #  token: ${{ secrets.SECRETS_TOKEN}}
 
     # - name: Update tag in Helm chart
      # run: |
